@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 
+/* Author: Antonio Marcos.                                               */
 /* Portuguese: A função strcmp() compara string1 e string2. A função     */
 /* opera em sequências de terminação nula. Os argumentos de sequência    */
 /* para a função devem conter um caractere nulo (\0) que marca o término */
