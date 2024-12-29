@@ -1,0 +1,29 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+/* Portuguese: A função strcmp() compara string1 e string2. A função     */
+/* opera em sequências de terminação nula. Os argumentos de sequência    */
+/* para a função devem conter um caractere nulo (\0) que marca o término */
+/* da sequência.                                                         */
+
+int main() 
+{
+	char nome1[10] = "Antonio";
+	char nome2[10];
+	
+	printf("Informe seu nome: ");
+	scanf("%s", nome2);
+	printf("\nNome informado em nome1: %s", nome1);
+	printf("\nNome informado em nome2: %s", nome2);
+	if (strcmp(nome1, nome2) == 0)
+	{
+		printf("\nAntonio eh um nome bonito!");
+	}
+	else
+	{
+		printf("\nNao gostei desse nome: %s", nome2);
+    }
+		return 0;
+		
+}
