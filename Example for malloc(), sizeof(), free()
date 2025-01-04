@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+	
+//Declaração	
+	char *senha;
+
+//Processamento
+  senha = (char *) malloc (sizeof(char));
+  printf("Digite a sua senha com ate 8 caracteres: ");
+	scanf("%s", senha);
+	
+	printf("\nSenha: %s", senha);
+	printf("\nEndereco antes de usar free(): %d", senha);
+	
+	free(senha);
+	senha = NULL;
+	
+	printf("\nEndereco depois de usar free(): %d", senha);	
+	
+	return 0;
+}
