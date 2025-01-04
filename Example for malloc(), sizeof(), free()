@@ -4,12 +4,21 @@
 int main()
 {
 	
+/* Author: Antonio Marcos.                                               */
+/* Portuguese: A função malloc() é usada para alocar dinamicamente       */
+/* um bloco de memória durante a execução do programa. Esse bloco de     */ 
+/* memória é especificado em bytes e a função retorna um ponteiro para o */
+/* início do bloco alocado. A função sizeof() determina o tamanho em     */
+/* bytes de um tipo de dado ou variável. Associado ao malloc() pode se   */
+/* tornar extremamente útil. Por fim, a função free() serve para liberar */
+/* a memória que foi previamente alocada dinamicamente.                  */	
+
 //Declaração	
 	char *senha;
 
 //Processamento
-  senha = (char *) malloc (sizeof(char));
-  printf("Digite a sua senha com ate 8 caracteres: ");
+    senha = (char *) malloc (sizeof(char));
+    printf("Digite a sua senha com ate 8 caracteres: ");
 	scanf("%s", senha);
 	
 	printf("\nSenha: %s", senha);
